@@ -90,7 +90,7 @@ router.post("/", checkAuth, upload.single("productImage"), (req, res, next) => {
           _id: result._id,
           request: {
             type: "GET",
-            url: "http://localhost:3000/products/" + result._id
+            url: "https://nodejsmongo2019.herokuapp.com/products/" + result._id
           }
         }
       });
